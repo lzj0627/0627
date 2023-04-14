@@ -5,6 +5,6 @@ MAINTAINER lzj
 #切换工作目录
 RUN mkdir /soft
 WORKDIR /soft
-COPY ./requestments.txt /soft/requestments.txt
+COPY ./requirements.txt /soft/requirements.txt
 RUN pip install -r requestment.txt -i https://pypi.doubanio.com/simple
 CMD ["uwsgi", "./rbac_demo.ini"]
