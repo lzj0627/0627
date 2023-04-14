@@ -9,7 +9,7 @@ services:
       - "8000:8000"
     restart: always
     volumes:
-      - ./rbac_demo/dist:/var/www/html
+      - ./rbac_demo_front/dist:/var/www/html
       - ./docker_compose_files/nginx:/etc/nginx/conf.d
     depends_on:
       - django
@@ -26,7 +26,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./luffy_api:/soft
+      - ./rbac_demo:/soft
     environment:
       - TZ=Asia/Shanghai
     depends_on:
