@@ -29,6 +29,7 @@ services:
       - ./rbac_demo:/soft
     environment:
       - TZ=Asia/Shanghai
+      - MYSQL_HOST=mysql
     depends_on:
       - mysql
     networks:

@@ -82,8 +82,9 @@ WSGI_APPLICATION = 'rbac_demo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-USERNAME = os.environ.get('RBAC_USERNAME', 'rbac_admin')
-PASSWORD = os.environ.get('RBAC_PASSWORD', 'rbac123')
+USERNAME = os.environ.get('RBAC_USERNAME', 'root')
+PASSWORD = os.environ.get('RBAC_PASSWORD', '123')
+HOST = os.environ.get('MYSQL_HOST', '127.0.0.1')
 
 DATABASES = {
     'default': {
@@ -91,7 +92,7 @@ DATABASES = {
         'NAME': 'rbac_demo',
         'USER': USERNAME,
         'PASSWORD': PASSWORD,
-        'HOST': '127.0.0.1',
+        'HOST': HOST,
         'PORT': 3306
     }
 }
