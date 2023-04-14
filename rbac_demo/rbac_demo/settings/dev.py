@@ -92,7 +92,7 @@ DATABASES = {
         'NAME': 'rbac_demo',
         'USER': USERNAME,
         'PASSWORD': PASSWORD,
-        'HOST': HOST,
+        'HOST': 'rbac_mysql',
         'PORT': 3306
     }
 }
