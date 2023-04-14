@@ -225,7 +225,7 @@ CORS_ALLOW_HEADERS = (
     'auth'
 )
 
-BACKEND_URL = 'http://127.0.0.1:8000/'
+BACKEND_URL = 'http://106.15.189.8:8000/'
 
 
 JWT_AUTH = {
