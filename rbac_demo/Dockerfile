@@ -6,5 +6,5 @@ MAINTAINER lzj
 RUN mkdir /soft
 WORKDIR /soft
 COPY ./requirements.txt /soft/requirements.txt
-RUN pip install -r requestment.txt -i https://pypi.doubanio.com/simple
+RUN pip install -r requestments.txt -i https://pypi.doubanio.com/simple
 CMD ["uwsgi", "./rbac_demo.ini"]
